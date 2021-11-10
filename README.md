@@ -4,7 +4,7 @@ code for the paper: Robust Object Classification Approachusing Spherical Harmoni
 This repository contains tensorflow implementation of our robust spherical harmonics CNN. More details are coming soon.
 
 
-[embed]http://example.com/file.pdf[/embed]
+![main pic](graph abst.pdf)
 
 
 
