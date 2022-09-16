@@ -1,0 +1,4 @@
+--n_epochs=60
+--learning_rate
+{0: 0.001, 5: 0.0002, 40: 4e-05}
+--train_bsize=32
