@@ -15,7 +15,7 @@ spherical-cnn](https://github.com/daniilidis-group/spherical-cnn). The training 
 
 
 # Citation
-If you find our work usefull, please cite as:
+If you find the work useful, please cite as:
 ```
 @ARTICLE{9713880,
   author={Mukhaimar, Ayman and Tennakoon, Ruwan and Lai, Chow Yin and Hoseinnezhad, Reza and Bab-Hadiashar, Alireza},
