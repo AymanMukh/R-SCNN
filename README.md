@@ -11,7 +11,22 @@ This repository contains tensorflow implementation of a robust spherical harmoni
 Our code is based on [
 spherical-cnn](https://github.com/daniilidis-group/spherical-cnn). The training and testing files should be stored as .tfrecord. We provide an examble on how to generate a .tfrecord from .h5 using Matlab. We also perform the augmentation in Matlab. 
 
+To generate the .tfrecord files:
+1. Download ModelNet40 dataset, or any point cloud dataset with .h5 extension.
+2. Use the makeSphVoxels.m to convert point cloud 3D Models to spherical voxel grid.
+3. Use tfrecord_generator.py to generate the .tfrecord files.
 
+After generating the training and testing files, run the Point cloud model as:
+
+```
+python3 scripts/train.py \
+                               @params/model-64.txt \
+                               @params/m40-64.txt \
+                               @params/training.txt \
+                               --dset_dir ~/data/m40-so3-64 \
+                               --logdir /tmp/m40-so3 \
+                               --run_id m40-so3
+```
 
 
 # Citation
