@@ -9,7 +9,7 @@ This repository contains tensorflow implementation of a robust spherical harmoni
 
 # Training
 Our code is based on [
-spherical-cnn](https://github.com/daniilidis-group/spherical-cnn). The training and testing files should be stored as .tfrecord. We provide an examble on how to generate a .tfrecord from .h5 using Matlab. We also perform the augmentation in Matlab. 
+spherical-cnn](https://github.com/daniilidis-group/spherical-cnn). The training and testing files should be stored as .tfrecord. We provide an examble on how to generate a .tfrecord from .h5. We perform the augmentation in Matlab. 
 
 To generate the .tfrecord files:
 1. Download ModelNet40 dataset, or any point cloud dataset with .h5 extension.
