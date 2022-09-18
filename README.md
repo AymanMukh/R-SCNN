@@ -1,7 +1,7 @@
 # Robust Object Classification Approachusing Spherical Harmonics
 code for the [paper](https://ieeexplore.ieee.org/abstract/document/9713880): Robust Object Classification Approachusing Spherical Harmonics
 
-This repository contains tensorflow implementation of a robust spherical harmonics CNN. The Method was tested for both robust point cloud and image (MNIST) classification.
+This repository contains tensorflow implementation of a robust spherical harmonics CNN. The Method was tested for both robust point cloud and image (MNIST) classification. The model uses the voxel grid of concentric spheres to learn features over the unit ball. Also the convolution operations is performed in the Fourier domain. As a result, our model is able to learn features that are less sensitive to Point clouds perturbations and corruptions.
 
 
 ![main pic](graph_abst.PNG)
@@ -9,7 +9,7 @@ This repository contains tensorflow implementation of a robust spherical harmoni
 
 # Training
 Our code is based on [
-spherical-cnn](https://github.com/daniilidis-group/spherical-cnn). The training and testing files should be stored as .tfrecord. We provide an examble on how to generate a .tfrecord from .h5. We perform the augmentation in Matlab. 
+spherical-cnn](https://github.com/daniilidis-group/spherical-cnn). The training and testing files should be stored as .tfrecord. We provide an examble on how to generate a .tfrecord from .h5. We perform the data augmentations in Matlab. 
 
 To generate the .tfrecord files:
 1. Download ModelNet40 dataset, or any point cloud dataset with .h5 extension.
