@@ -4,13 +4,15 @@ import tensorflow as tf
 import numpy as np
 import provider
 
-# notes : rotations are 23 , then they are repeated.
-# y is label.
-
-
 shape_names = ['airplane','bag','basket','bathtub','bed','bench','birdhouse','bookshelf','bottle','bowl','bus','cabinet','can','camera','cap','car','cellphone','chair','clock','dishwasher','earphone','faucet','file','guitar','helmet','jar','keyboard','knife','lamp','laptop','mailbox','microphone','microwave','monitor','motorcycle','mug','piano','pillow','pistol','pot','printer','remote_control','rifle','rocket','skateboard','sofa','speaker','stove','table','telephone','tin_can','tower','train','vessel','washer']
 
 
+def load_h5_theta(h5_filename):
+    f = h5py.File(h5_filename, 'r')
+    data = f['data'][:]
+    label = f['label'][:]
+    theta = f['theta'][:]
+    return (data, label, theta)
 
 def _int64_feature(value):
         return tf.train.Feature(int64_list=tf.train.Int64List(value=[value]))
@@ -122,7 +124,7 @@ params['tfrecord_location'] = loc
 
 
 for i in range(0, 11):
-  current_data, current_label, theta = provider.load_h5_theta(loc+'voxl'+ str(i)+ '.h5')
+  current_data, current_label, theta = load_h5_theta(loc+'voxl'+ str(i)+ '.h5')
   current_label=np.reshape(current_label, (-1))
   # theta=[]
   convert_and_save_to(current_data, theta, current_label, 'train'+ str(5+i), params, rot=0)
