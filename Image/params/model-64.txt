@@ -1,0 +1,13 @@
+--model=two_branch
+--nonlin
+relu
+--weighted_sph_avg
+--n_filter_params
+9
+--nfilters
+9
+--pool_layers
+0
+--transform_method
+naive
+--spectral_pool
