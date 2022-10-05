@@ -31,7 +31,7 @@ python3 scripts/train.py \
 
 ## Mnist
 
-We followed the same procedure for generating the Corrupted mnist dataset. Refer to makemnist.m for details on how to generate the data corruptions. We also provide a checkpoint inside the [tmp](https://github.com/AymanMukh/R-SCNN/tree/main/Image/tmp/mnist1) folder.
+We followed the same procedure for generating the Corrupted mnist dataset. Refer to makemnist.m for details on how to generate the data corruptions. We also provide the [data](https://1drv.ms/u/s!AnWo5FHIPDxkauMvKQumg9q8ies?e=unnFsO) used in our experments and a checkpoint inside the [tmp](https://github.com/AymanMukh/R-SCNN/tree/main/Image/tmp/mnist1) folder.
 
 <img src="mnist.PNG" width="250" height="300">
 
