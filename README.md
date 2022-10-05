@@ -35,8 +35,7 @@ We followed the same procedure for generating the currupted mnist dataset. Refer
 
 <img src="mnist.PNG" width="250" height="300">
 
-
-
+We compared our method with a convertional CNN and two other spherical CNNs in the table below. Each mnist input image has 28*28 pixels, we randomly currupt 100 or 300 pixels as shown in the image above. The results are shown in the taable below:
 
 | Method  | clean | 100  |  300 |
 | ------- | ------| ---- | ---- |
