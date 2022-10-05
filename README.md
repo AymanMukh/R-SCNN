@@ -31,11 +31,11 @@ python3 scripts/train.py \
 
 ## Mnist
 
-We followed the same procedure for generating the currupted mnist dataset. Refer to makemnist.m for details on how to generate the data curruption. We also provide a checkpoint insdie the tmp folder.
+We followed the same procedure for generating the Corrupted mnist dataset. Refer to makemnist.m for details on how to generate the data corruption. We also provide a checkpoint insdie the tmp folder.
 
 <img src="mnist.PNG" width="250" height="300">
 
-We compared our method with a convertional CNN and two other spherical CNNs in the table below. Each mnist input image has 28*28 pixels, we randomly currupt 100 or 300 pixels as shown in the image above. The results are shown in the taable below:
+We compared our method with a convertional CNN and two other spherical CNNs in the table below. Each mnist input image has 28*28 pixels, we randomly currupt 100 or 300 pixels as shown in the image above. The results are shown in the table below:
 
 | Method  | clean | 100  |  300 |
 | ------- | ------| ---- | ---- |
