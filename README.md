@@ -40,8 +40,9 @@ We followed the same procedure for generating the currupted mnist dataset. Refer
 
 | Method  | clean | 100  |  300 |
 | ------- | ------| ---- | ---- |
-|Spherical-cnn |  **98.4** | 85 | 46 |
-|s2cnn |  96 |  90  | 17 |
+|2D CNN | 98 | 83.3 | 37.6 |
+|[Spherical-cnn](https://github.com/daniilidis-group/spherical-cnn) |  **98.4** | 85 | 46 |
+|[s2cnn](https://github.com/jonkhler/s2cnn) |  96 |  90  | 17 |
 |R-SCNN (ours)|  94 | **92** | **72**  |
 
 
