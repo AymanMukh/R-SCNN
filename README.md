@@ -33,7 +33,7 @@ python3 scripts/train.py \
 
 We followed the same procedure for generating the currupted mnist dataset. Refer to makemnist.m for details on how to generate the data curruption. We also provide a checkpoint insdie the tmp folder.
 
-![image pic]<img src="mnist.PNG">
+![image pic]<img src="mnist.PNG" width="100" height="100">
 
 
 
