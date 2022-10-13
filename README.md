@@ -29,7 +29,7 @@ python3 scripts/train.py \
                                --run_id m40-so3
 ```
 
-## Mnist
+## mnist
 
 We followed the same procedure for generating the Corrupted mnist dataset. Refer to makemnist.m for details on how to generate the data corruptions. We also provide the [data](https://1drv.ms/u/s!AnWo5FHIPDxkauMvKQumg9q8ies?e=unnFsO) used in our experiments and a checkpoint inside the [tmp](https://github.com/AymanMukh/R-SCNN/tree/main/Image/tmp/mnist1) folder.
 
